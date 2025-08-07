@@ -1,0 +1,73 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+   max-width: 100%;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  border-bottom: 1px solid rgba(200, 200, 200, 0.2); 
+  box-sizing: border-box;
+  margin: 0;
+  
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 60px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.hamburger {
+  display: block;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: black;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-menu.active {
+  display: flex;
+}
+
+.nav-menu button {
+  margin: 8px 0;
+  text-align: left;
+  color: black;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-menu button:hover {
+  color: #555;
+}
