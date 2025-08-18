@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import { FaBars } from 'react-icons/fa';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/newlogo.jpg';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ function Header() {
         <img src={logo} alt="Logo" />
         <span></span>
       </div>
-
+      <div className="empty-div"></div> 
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <FaBars />
       </div>
